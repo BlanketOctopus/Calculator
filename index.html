@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <main>
+        <section class="calculator">
+            <section class="topDisplay" data-previousOperand></section>
+            <section class="display" data-currentOperand>0</section>
+            <button class="clear" data-clear>C</button>
+            <button class="backspace" data-backspace>DEL</button>
+            <button id="divide" class="operator" data-operation="divide">/</button>
+            <button id="7" class="number" data-number>7</button>
+            <button id="8" class="number" data-number>8</button>
+            <button id="9" class="number" data-number>9</button>
+            <button id="multiply" class="operator" data-operation="multiply">*</button>
+            <button id="4" class="number" data-number>4</button>
+            <button id="5" class="number" data-number>5</button>
+            <button id="6" class="number" data-number>6</button>
+            <button id="subtract" class="operator" data-operation="subtract">-</button>
+            <button id="1" class="number" data-number>1</button>
+            <button id="2" class="number" data-number>2</button>
+            <button id="3" class="number" data-number>3</button>
+            <button id="add" class="operator" data-operation="add">+</button>
+            <button id="0" class="number" data-number>0</button>
+            <button class="decimal" data-operation="decimal">.</button>
+            <button id="equals" class="equals" data-operation="equals">=</button>
+        </section>
+    </main>
+    <div id="prev"></div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
